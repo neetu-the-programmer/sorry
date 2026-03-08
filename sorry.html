@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>I'm Sorry Yogmaya</title>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg,#ffd6e0,#ffeef5);
+text-align:center;
+padding:50px;
+}
+
+.container{
+background:white;
+padding:40px;
+border-radius:20px;
+width:70%;
+margin:auto;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+h1{
+color:#ff4d6d;
+}
+
+p{
+font-size:18px;
+line-height:1.7;
+}
+
+button{
+padding:12px 25px;
+font-size:18px;
+border:none;
+border-radius:12px;
+cursor:pointer;
+margin:10px;
+}
+
+.forgive{
+background:#ff4d6d;
+color:white;
+}
+
+.no{
+background:#ccc;
+}
+</style>
+
+<script>
+function forgive(){
+alert("Thank you for giving Maya another chance ❤️");
+}
+
+function moveButton(){
+var btn = document.getElementById("noBtn");
+btn.style.position="absolute";
+btn.style.left=Math.random()*80+"%";
+btn.style.top=Math.random()*80+"%";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Yogmaya, I'm Really Sorry 💔</h1>
+
+<p>
+Happy Holi message you sent on 4th March was really thoughtful and kind.
+I should have replied. You deserved a reply.
+</p>
+
+<p>
+But the truth is I wasn't in the right headspace that day.  
+There were many things going on in my mind and I just shut down instead of responding.
+</p>
+
+<p>
+That doesn't mean I ignored you or that your message didn't matter to me.
+It actually meant a lot.
+</p>
+
+<p>
+I'm really sorry that my silence made you feel like I didn't care about you or our friendship.
+That was never my intention.
+</p>
+
+<p>
+You are important to me and I value our friendship a lot.
+</p>
+
+<p>
+If you're willing, I'd really like to fix things between us.
+</p>
+
+<h2>Will you forgive me? 🥺</h2>
+
+<button class="forgive" onclick="forgive()">Yes, I forgive you 💖</button>
+<button class="no" id="noBtn" onmouseover="moveButton()">Still angry 😤</button>
+
+<p style="margin-top:30px;">
+— Maya
+</p>
+
+</div>
+
+</body>
+</html>
